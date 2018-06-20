@@ -1,3 +1,5 @@
+package Logic;
+
 import java.util.List;
 
 import javax.swing.JTextArea;
@@ -14,7 +16,7 @@ public class NeuralXOR {
 	private double XOR_IDEAL[][] = {{0.0}, {1.0}, {1.0}, {0.0}};
 
 	private JTextArea ta_log = null;
-	private SwingWorker worker = null;
+	private SwingWorker<Void, String> worker = null;
 
 	private FeedforwardNetwork network;
 

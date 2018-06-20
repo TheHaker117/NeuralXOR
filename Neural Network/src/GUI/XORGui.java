@@ -1,3 +1,5 @@
+package GUI;
+
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,8 +16,14 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
+import Logic.NeuralXOR;
+
 public class XORGui extends JFrame implements ActionListener {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextField tf_val00, tf_val01, tf_errmin;
 	private JLabel lbl_xor, lbl_errmin, lbl_epochs;
 	private JSpinner spn_epochs;
